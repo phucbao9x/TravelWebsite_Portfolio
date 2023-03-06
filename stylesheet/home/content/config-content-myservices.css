@@ -1,0 +1,82 @@
+.content-website .myservices{
+    height: var(--height-content-website-myservices);
+    background-color: var(--background-myservices);
+    color: var(--coloroftext);
+}
+
+.myareans{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--grid-gap-myareans);
+    margin: var(--margin-myareans);
+
+}
+
+.myservices{
+    text-align: center;
+    justify-content: center;
+    font-size: var(--font-size-myservices);
+    height: calc(var(--height-content-website-myservices) - var(--line-height-myservices-span));
+    font-family: Mulish-VariableFont_wght;
+}
+
+.myservices span{
+    padding-top: var(--padding-top-headername-span);
+    line-height: var(--line-height-headername-span);
+    text-align: center;
+    justify-content: center;
+    font-size: var(--font-size-headername-span);
+    font-family: MerriweatherBold;
+    letter-spacing: var(--letter-spacing-headername-span);
+}
+
+.myareans .item-grid{
+    margin: var(--margin-myareans-itemGrid);
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+}
+
+.item-grid img{
+    border-radius: var(--border-radius-itemGrid-img);
+    margin: 0 auto;
+    height: var(--size-image);
+    width: var(--size-image);
+}
+
+.item-grid h1, .item-grid p{
+    width: var(--size-image);
+    margin: 0 auto;
+    text-align: center
+}
+.item-grid p {
+    position: relative;
+    text-align: justify;
+    mask-image: linear-gradient(to bottom, var(--background-myservices-bottom), var(--background-myservices-top));
+    mask-repeat: no-repeat;
+    -o-mask-image: linear-gradient(to bottom, var(--background-myservices-bottom), var(--background-myservices-top));
+    -o-mask-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom, var(--background-myservices-bottom), var(--background-myservices-top));
+    -webkit-mask-repeat: no-repeat;
+}
+
+.item-grid a{
+    text-decoration: none;
+    margin: var(--margin-itemGrid-a);
+    margin-top: var(--margin-top-itemGrid-a);
+    padding: var(--padding-itemGrid-a);
+    color: var(--coloroftext);
+    border-radius: var(--border-radius-itemGrid-a);
+    width: var(--button-readmore);
+    border: var(--border-width-itemGrid-a) solid var(--coloroftext);
+    transition: var(--transition-itemGrid-a);
+    -o-transition: var(--transition-itemGrid-a);
+    -moz-transition: var(--transition-itemGrid-a);
+    -webkit-transition: var(--transition-itemGrid-a);
+}
+
+.item-grid a:hover {
+    letter-spacing: var(--letter-spacing-itemGrid-a_Hover);
+    color: var(--color-item-grid-a_Hover);
+    background-color: var(--background-color-item-grid-a_Hover);
+    /* font-size: var(--font-size-itemGrid-a_Hover); */
+}

@@ -1,0 +1,54 @@
+/* [v] Add font Merriweather */
+@font-face {
+    font-family: MerriweatherBlack;
+    src: url("../../asserts/Merriweather-Black.ttf");
+}
+@font-face {
+    font-family: MerriweatherBlackItalic;
+    src: url("../../asserts/Merriweather-BlackItalic.ttf");
+}
+@font-face {
+    font-family: MerriweatherBold;
+    src: url("../../asserts/Merriweather-Bold.ttf");
+}
+@font-face {
+    font-family: MerriweatherBoldItalic;
+    src: url("../../asserts/Merriweather-BoldItalic.ttf");
+}
+@font-face {
+    font-family: MerriweatherItalic;
+    src: url("../../asserts/Merriweather-Italic.ttf");
+}
+@font-face {
+    font-family: MerriweatherLight;
+    src: url("../../asserts/Merriweather-Light.ttf");
+}
+@font-face {
+    font-family: MerriweatherLightItalic;
+    src: url("../../asserts/Merriweather-LightItalic.ttf");
+}
+@font-face {
+    font-family: MerriweatherRegular;
+    src: url("../../asserts/Merriweather-Regular.ttf");
+}
+
+@font-face {
+    font-family: Mulish-SemiBold;
+    src: url("../../asserts/static/Mulish-SemiBold.ttf");
+}
+@font-face {
+    font-family: Mulish-SemiBoldItalic;
+    src: url("../../asserts/static/Mulish-SemiBoldItalic.ttf");
+}
+@font-face {
+    font-family: Mulish-Italic-VariableFont_wght;
+    src: url('../../asserts/Mulish-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Mulish-VariableFont_wght;
+    src: url('../../asserts/Mulish-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: MulishLight;
+    src: url('../../asserts/static/Mulish-Light.ttf');
+}

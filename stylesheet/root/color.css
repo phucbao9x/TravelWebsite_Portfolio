@@ -1,0 +1,12 @@
+* {
+    --coloroftext : #fff;
+    --header-background-color: #111111;
+    --background-button: #FFCF00;
+    --background-comments : #222222;
+    --background-myservices: #333333;
+    --background-myservices-top: rgba(51, 51, 51, 0.2);
+    --background-myservices-bottom: rgba(51, 51, 51, 0.9);
+    --background-contactus: #333333;
+    --color-item-grid-a_Hover: #333;
+    --background-color-item-grid-a_Hover: #fff;
+}

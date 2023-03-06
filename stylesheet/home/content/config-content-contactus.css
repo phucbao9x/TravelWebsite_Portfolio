@@ -1,0 +1,105 @@
+.content-website .contactus{
+    position: relative;
+    min-height: var(--height-contentWebsite-contactUs);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--background-contactus);
+    color: var(--coloroftext);
+    align-items: center;
+}
+
+.content-website .contactus .text{
+    font-family: MerriweatherBold;
+    padding: var(--padding-contentWebsite-contactUs-text);
+}
+
+.content-website .contactus .text span{
+    font-size: var(--font-size-headername-span);
+    letter-spacing: var(--letter-spacing-headername-span);
+}
+
+.content-website .contactus .text p {
+    font-family: Mulish-VariableFont_wght;
+}
+
+.content-website .contactus form{
+    display: grid;
+    grid-gap: var(--margin-contentWebsite-contactUs-InputText);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.content-website .contactus .form-contact label{
+    font-size: var(--font-size-text);
+    color: var(--coloroftext);
+    opacity: 0.7;
+}
+
+.content-website .contactus .form-contact input, .content-website .contactus .form-contact textarea {
+    margin: var(--margin-contentWebsite-contactUs-InputText);
+    font-size: var(--font-size-text);
+    background-color: #666;
+    padding: var(--padding-contentWebsite-contactUs-InputText);
+    border: none;
+    color: var(--coloroftext);
+    border-bottom: 3px solid transparent;
+    padding-bottom: 3px;
+    outline: none;
+    transition: var(--transition-contentwebsite-contactUs-InputText);
+    -o-transition: var(--transition-contentwebsite-contactUs-InputText);
+    -ms-transition: var(--transition-contentwebsite-contactUs-InputText);
+    -webkit-transition: var(--transition-contentwebsite-contactUs-InputText);
+}
+
+.content-website .contactus .form-contact textarea {
+    resize:none;
+    font-size: calc(var(--font-size-text) * 1.14);
+    padding: var(--padding-contentWebsite-contactUs-TextArea);
+    justify-content: center;
+    text-align: justify;
+    min-height: 150px;
+}
+
+.content-website .contactus .form-contact button {
+    margin: var(--margin-contentWebsite-contactUs-Button);
+    font-size: var(--font-size-text);
+    font-family: MulishLight;
+    cursor: pointer;
+}
+
+.fomt-contact input.active{
+    color: var(--coloroftext);
+    border-bottom: 2px solid var(--coloroftext);
+}
+
+
+.content-website .contactus .form-contact .form-name {
+    grid-column: span 3;
+    grid-row: 1;
+    margin-right: calc(0.5 * var(--gap-contentWebsite-GridGap));;
+}
+
+.content-website .contactus .form-contact .form-email{
+    grid-column: span 3;
+    grid-row: 1;
+    margin-left: calc(0.5 * var(--gap-contentWebsite-GridGap));
+}
+
+
+.content-website .contactus .form-contact .form-phone {
+    grid-column-end: span 6;
+}
+.content-website .contactus .form-contact .form-message{
+    grid-column-end: span 6;
+    min-height: minmax(120px, auto);
+}
+
+.content-website .contactus .form-contact .button-send{
+    grid-column: 6;
+    text-align: center;
+    height: var(--height-contentWebsite-contactus-formContact-buttonSend);
+    width: var(--width-contentWebsite-contactus-formContact-buttonSend);
+    border: none;
+    border-radius: var(--borderRadius-contentWebsite-contactus-formContact-buttonSend);
+    background-color: var(--background-button);
+    color: var(--coloroftext);
+}

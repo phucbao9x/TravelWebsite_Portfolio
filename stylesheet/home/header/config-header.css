@@ -1,0 +1,75 @@
+
+.header-website{
+    background-color: var(--header-background-color);
+    height: 90px;
+    width: 100%;
+}
+
+.logowebsite{
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logowebsite span{
+    color: var(--coloroftext);
+    font-family: MerriweatherBold;
+    font-size: 2rem;
+}
+
+.connect{
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    width: 100px;
+    padding-left: 8px;
+}
+
+.connect div{
+    position: relative;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.grid-item1{
+    grid-area: col1;
+}
+.grid-item2{
+    grid-area: col2;
+}
+.grid-item3{
+    grid-area: col3;
+}
+
+.call-us{
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: var(--coloroftext);
+    font-family: Mulish-VariableFont_wght;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    box-sizing: content-box;
+    background-color: var(--background-button);
+    transition: 0.725s;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.call-us span{
+    line-height: 50px;
+}
+
+.call-us:hover{
+    letter-spacing: 0.05rem;
+}
+.call-us:hover::after{
+    content: "\260E";
+}

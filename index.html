@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <!-- [v]: Add root css -->
+    <link rel="stylesheet" href="./stylesheet/root/reset.css">
+    <link rel="stylesheet" href="./stylesheet/root/grid-system.css">
+    <link rel="stylesheet" href="./stylesheet/root/color.css">
+    <link rel="stylesheet" href="./stylesheet/root/root-settingValue.css">
+    <link rel="stylesheet" href="./stylesheet/root/font-face.css">
+    <link rel="stylesheet" href="./stylesheet/root/root-effect.css">
+    <!-- [v]: Add header css -->
+    <link rel="stylesheet" href="./stylesheet/home/header/config-header.css">
+    <!-- [ ] Add content css -->
+    <link rel="stylesheet" href="./stylesheet/home/content/config-content-comments.css">
+    <link rel="stylesheet" href="./stylesheet/home/content/config-content-introduction.css">
+    <link rel="stylesheet" href="./stylesheet/home/content/config-content-myservices.css">
+    <link rel="stylesheet" href="./stylesheet/home/content/config-content-contactus.css">
+</head>
+<body>
+    <div id="app"  style="--time-begin: 2s; --time-delay:0.125s;--interaction-count:1">
+        <section class="header-website">
+            <div class="connect grid-column cols3">
+                <div class="grid-item1 slideToTop" style="--id-event:1">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png" />
+                </div>
+                <div class="grid-item2  slideToTop" style="--id-event:2">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" />
+                </div>
+                <div class="grid-item3  slideToTop" style="--id-event:3">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter--v1.png" />
+                </div>
+            </div>
+            <div class="logowebsite" style="--id-event:1">
+                <span class="showup">Travel</span>
+            </div>
+            <div class="call-us slideToLeft" style="--id-event:6">
+                <span>Call Us</span>
+            </div>
+        </section>
+        <section class="content-website">
+            <div class="introduction">
+                <div class="text">
+                    <h1 class="slideToRight" style="--id-event:2">Traveling in Vietnam</h1><br>
+                    <p class="slideToTop" style="--id-event:3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ex, ab adipisci fugit reiciendis voluptates sapiente aperiam iste cupiditate vitae ipsum, aliquam esse hic expedita ipsa unde corrupti temporibus quia.</p>
+                </div>
+            </div>
+            <div class="comments">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt consequaturquos, molestiae quisquam modi eius praesentium voluptates corporis magni expedita labore, ipsa quidem eum. Aliquam eos repellat tempora assumenda illo.</p>
+                <strong>Limi</strong>
+            </div>
+            <div class="myservices">
+                <span>Our products</span>
+                <div class="grid-column myareans">
+                    <div class="item-grid">
+                        <img src="asserts/image/content-201000.png" alt="Camping">
+                        <h1>Camping services</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste provident distinctio odit fugiat 
+                            consectetur similique saepe...</p>
+                        <a class="button-style1" href="#">Read more</a>
+                    </div>
+                    <div class="item-grid">
+                        <img src="asserts/image/content-201001.png" alt="Car & Airplane booking">
+                        <h1>Moving services</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste provident distinctio odit fugiat
+                            consectetur similique saepe...</p>
+                        <a class="button-style1" href="#">Read more</a>
+                    </div>
+                    <div class="item-grid">
+                        <img src="asserts/image/content-201002.jpg" alt="Tour & Hotel booking">
+                        <h1>Book a Tour</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste provident distinctio odit fugiat
+                            consectetur similique saepe...</p>
+                        <a class="button-style1" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contactus">
+                <div class="text">
+                    <span>Contact us</span><br>
+                    <p>Fill out the form and we'll get back to you shortly!</p>
+                </div>
+                <form action="" class="form-contact">
+                    <input class="form-name" placeholder="Name" type="text" name="namecustom" id="name">
+                    <input placeholder="Email" class="form-email" type="text" name="emailcustom" id="email"><input class="form-phone" placeholder="Number phone" type="text" name="numberphonecustom" id="numberphone">
+                    <textarea class="form-message" placeholder="Message" name="messagecustom" id="message"></textarea>
+                    <button class="button-send">Send</button>
+                </form>
+            </div>
+        </section>
+        <section class="footer-website"></section>
+    </div>
+</body>
+</html>

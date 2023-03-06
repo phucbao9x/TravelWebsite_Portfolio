@@ -1,0 +1,31 @@
+html,
+body,
+div,
+section{
+    margin: 0;
+    padding: 0;
+}
+p,
+span,
+pre,
+strong,
+i,
+b,
+h1,
+img,
+h2,
+h3,
+input,
+h4,
+h5,
+h6{
+    display: inline-block;
+    margin: 0;
+    padding:0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}

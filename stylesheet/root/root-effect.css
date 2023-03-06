@@ -1,0 +1,267 @@
+@keyframes slideBottomToTop {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+        -o-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+    }
+    100%{opacity: 1;}
+}
+
+@keyframes slideTopToBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+    }
+
+    100% {opacity: 1;}
+}
+
+@keyframes slideLeftToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+
+    100% {opacity: 1;}
+}
+
+@keyframes slideRightToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        -o-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {opacity: 1;}
+}
+
+@keyframes showup {
+    0%{opacity: 0;scale: 0;}
+    100%{opacity: 1; scale: 1;}
+}
+
+
+@keyframes hide-effect {
+    0% {
+        opacity: 1;
+        scale: 1;
+    }
+
+    100% {
+        opacity: 0;scale: 0;
+    }
+}
+
+.hide-effect{
+    opacity: 1;
+    animation-name: hide-effect;
+    -webkit-animation-name: hide-effect;
+    -ms-animation-name: hide-effect;
+    -moz-animation-name: hide-effect;
+    -o-animation-name: hide-effect;
+
+    animation-duration: var(--time-duration, 0.225s);
+    animation-fill-mode: forwards;
+    animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    animation-iteration-count: var(--iteration-count);
+
+    -o-animation-duration: var(--time-duration, 0.225s);
+    -o-animation-fill-mode: forwards;
+    -o-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -o-animation-iteration-count: var(--iteration-count);
+
+    -ms-animation-duration: var(--time-duration, 0.225s);
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -ms-animation-iteration-count: var(--iteration-count);
+
+    -moz-animation-duration: var(--time-duration, 0.225s);
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -moz-animation-iteration-count: var(--iteration-count);
+
+    -webkit-animation-duration: var(--time-duration, 0.225s);
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -webkit-animation-iteration-count: var(--iteration-count);
+}
+
+.showup{
+    opacity: 0;
+    animation-name: showup;
+    -webkit-animation-name: showup;
+    -ms-animation-name: showup;
+    -moz-animation-name: showup;
+    -o-animation-name: showup;
+
+    animation-duration: var(--time-duration, 0.225s);
+    animation-fill-mode: forwards;
+    animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    animation-iteration-count: var(--iteration-count);
+
+    -o-animation-duration: var(--time-duration, 0.225s);
+    -o-animation-fill-mode: forwards;
+    -o-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -o-animation-iteration-count: var(--iteration-count);
+
+    -ms-animation-duration: var(--time-duration, 0.225s);
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -ms-animation-iteration-count: var(--iteration-count);
+
+    -moz-animation-duration: var(--time-duration, 0.225s);
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -moz-animation-iteration-count: var(--iteration-count);
+
+    -webkit-animation-duration: var(--time-duration, 0.225s);
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -webkit-animation-iteration-count: var(--iteration-count);
+}
+
+.slideToTop{
+    opacity: 0;
+    animation-name: slideBottomToTop;
+    -webkit-animation-name: slideBottomToTop;
+    -ms-animation-name: slideBottomToTop;
+    -moz-animation-name: slideBottomToTop;
+    -o-animation-name: slideBottomToTop;
+
+    animation-duration: var(--time-duration, 0.225s);
+    animation-fill-mode: forwards;
+    animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    animation-iteration-count: var(--iteration-count);
+
+    -o-animation-duration: var(--time-duration, 0.225s);
+    -o-animation-fill-mode: forwards;
+    -o-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -o-animation-iteration-count: var(--iteration-count);
+
+    -ms-animation-duration: var(--time-duration, 0.225s);
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -ms-animation-iteration-count: var(--iteration-count);
+
+    -moz-animation-duration: var(--time-duration, 0.225s);
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -moz-animation-iteration-count: var(--iteration-count);
+
+    -webkit-animation-duration: var(--time-duration, 0.225s);
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -webkit-animation-iteration-count: var(--iteration-count);
+}
+
+.slideToBottom {
+    opacity: 0;
+    animation-name: slideTopToBottom;
+    -webkit-animation-name: slideTopToBottom;
+    -ms-animation-name: slideTopToBottom;
+    -o-animation-name: slideTopToBottom;
+
+    animation-duration: var(--time-duration, 0.225s);
+    animation-fill-mode: forwards;
+    animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    animation-iteration-count: var(--iteration-count);
+
+    -o-animation-duration: var(--time-duration, 0.225s);
+    -o-animation-fill-mode: forwards;
+    -o-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -o-animation-iteration-count: var(--iteration-count);
+
+    -ms-animation-duration: var(--time-duration, 0.225s);
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -ms-animation-iteration-count: var(--iteration-count);
+
+    -moz-animation-duration: var(--time-duration, 0.225s);
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -moz-animation-iteration-count: var(--iteration-count);
+
+    -webkit-animation-duration: var(--time-duration, 0.225s);
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -webkit-animation-iteration-count: var(--iteration-count);
+}
+
+.slideToLeft{
+    opacity: 0;
+    animation-name: slideRightToLeft;
+    -webkit-animation-name: slideRightToLeft;
+    -ms-animation-name: slideRightToLeft;
+    -o-animation-name: slideRightToLeft;
+
+    animation-duration: var(--time-duration, 0.225s);
+    animation-fill-mode: forwards;
+    animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    animation-iteration-count: var(--iteration-count);
+
+    -o-animation-duration: var(--time-duration, 0.225s);
+    -o-animation-fill-mode: forwards;
+    -o-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -o-animation-iteration-count: var(--iteration-count);
+
+    -ms-animation-duration: var(--time-duration, 0.225s);
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -ms-animation-iteration-count: var(--iteration-count);
+
+    -moz-animation-duration: var(--time-duration, 0.225s);
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -moz-animation-iteration-count: var(--iteration-count);
+
+    -webkit-animation-duration: var(--time-duration, 0.225s);
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -webkit-animation-iteration-count: var(--iteration-count);
+}
+.slideToRight{
+    opacity: 0;
+    animation-name: slideLeftToRight;
+    -webkit-animation-name: slideLeftToRight;
+    -ms-animation-name: slideLeftToRight;
+    -o-animation-name: slideLeftToRight;
+
+    animation-duration: var(--time-duration, 0.225s);
+    animation-fill-mode: forwards;
+    animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    animation-iteration-count: var(--iteration-count);
+
+    -o-animation-duration: var(--time-duration, 0.225s);
+    -o-animation-fill-mode: forwards;
+    -o-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -o-animation-iteration-count: var(--iteration-count);
+
+    -ms-animation-duration: var(--time-duration, 0.225s);
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -ms-animation-iteration-count: var(--iteration-count);
+
+    -moz-animation-duration: var(--time-duration, 0.225s);
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -moz-animation-iteration-count: var(--iteration-count);
+
+    -webkit-animation-duration: var(--time-duration, 0.225s);
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
+    -webkit-animation-iteration-count: var(--iteration-count);
+}

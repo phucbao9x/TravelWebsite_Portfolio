@@ -1,0 +1,43 @@
+*{
+    /* [ ] For Content part */
+    --font-size-headername-span: 2rem;
+    --line-height-headername-span: 45px;
+    --letter-spacing-headername-span: 0.115rem;
+    --padding-top-headername-span: 20px;
+    --font-size-text: 1.15rem;
+    /*//////////////////////*/
+    /* [ ] For myservices */
+    --button-readmore: 150px;
+    --height-content-website-myservices : 100vh;
+    --size-image: 350px;
+    --grid-gap-myareans: 10px;
+    --margin-myareans: 10px 0px;
+    --font-size-myservices: 1.015rem;
+
+    --margin-myareans-itemGrid : 10px 5px;
+    --border-radius-itemGrid-img : 10px;
+
+    --margin-itemGrid-a: 0 auto;
+    --margin-top-itemGrid-a: 6px;
+    --padding-itemGrid-a: 9px;
+    --border-radius-itemGrid-a: 15px;
+    --border-width-itemGrid-a: 3px;
+    --transition-itemGrid-a: 0.45s;
+    --letter-spacing-itemGrid-a_Hover: 0.125rem;
+    /* --font-size-itemGrid-a_Hover: 1.019rem; */
+
+    /* [ ] For contactUs */
+    --padding-contentWebsite-contactUs-text : 55px;
+    --height-contentWebsite-contactUs: 75vh;
+    --transition-contentwebsite-contactUs-InputText: 0.735s;
+    --padding-contentWebsite-contactUs-InputText: 8px;
+    --padding-contentWebsite-contactUs-TextArea: 10px;
+    --margin-contentWebsite-contactUs-InputText: 10px 0px;
+    --gap-contentWebsite-GridGap : 10px;
+    --margin-contentWebsite-contactUs-InputText: var(--gap-contentWebsite-GridGap) 50px 0px var(--gap-contentWebsite-GridGap);
+    --borderRadius-contentWebsite-contactus-formContact-buttonSend: 12px;
+    --height-contentWebsite-contactus-formContact-buttonSend: 40px;
+    --width-contentWebsite-contactus-formContact-buttonSend: 120px;
+    --margin-contentWebsite-contactUs-Button: 10px 50px 0 0;
+    --transitiontime-contentWebsite-introduction : 1.125s;
+}

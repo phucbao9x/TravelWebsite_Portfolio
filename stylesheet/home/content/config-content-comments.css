@@ -1,0 +1,34 @@
+.content-website .comments{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: var(--coloroftext);
+    background-color: var(--background-comments);
+}
+
+.content-website .comments p{
+    display: inline-block;
+    width: 70%;
+    box-sizing: border-box;
+    font-family: Mulish-Italic-VariableFont_wght;
+    font-size: 1.75rem;
+    text-align: justify;
+}
+
+.content-website .comments p::before {
+    content: '"';font-family: Mulish-Italic-VariableFont_wght;
+}
+.content-website .comments p::after {
+    content: '"';font-family: Mulish-Italic-VariableFont_wght;
+}
+.content-website .comments strong{
+    display: inline-block;
+    width: 70%;
+    box-sizing: border-box;
+    font-family: MerriweatherBoldItalic;
+    font-size: 1.75rem;
+}
