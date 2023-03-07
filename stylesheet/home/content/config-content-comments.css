@@ -1,34 +1,34 @@
 .content-website .comments{
-    width: 100%;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    color: var(--coloroftext);
-    background-color: var(--background-comments);
+    width: var(--contentWebsite-width-comments);
+    height: var(--contentWebsite-height-comments);
+    display: var(--contentWebsite-display-comments);
+    flex-direction: var(--contentWebsite-flexDirection-comments);
+    align-items: var(--contentWebsite-alignI-comments);
+    align-content: var(--contentWebsite-alignC-comments);
+    justify-content: var(--contentWebsite-justifyC-comments);
+    color: var(--r-cl-content);
+    background-color: var(--r-bg-contentWebsite-comments);
 }
 
-.content-website .comments p{
-    display: inline-block;
-    width: 70%;
-    box-sizing: border-box;
-    font-family: Mulish-Italic-VariableFont_wght;
-    font-size: 1.75rem;
-    text-align: justify;
+.content-website .comments .quote{
+    display: var(--contentWebsite-comment-display-quote);
+    width: var(--contentWebsite-comment-width-quote);
+    box-sizing: var(--contentWebsite-comment-boxSizing-quote);
+    font-family: ContentFont;
+    font-size: var(--contentWebsite-comment-fontS-quote);
+    text-align: var(--contentWebsite-comment-textA-quote);
 }
 
-.content-website .comments p::before {
-    content: '"';font-family: Mulish-Italic-VariableFont_wght;
+.content-website .comments .quote::before {
+    content: '"';font-family: ContentFont;
 }
-.content-website .comments p::after {
-    content: '"';font-family: Mulish-Italic-VariableFont_wght;
+.content-website .comments .quote::after {
+    content: '"';font-family: ContentFont;
 }
-.content-website .comments strong{
-    display: inline-block;
-    width: 70%;
-    box-sizing: border-box;
-    font-family: MerriweatherBoldItalic;
-    font-size: 1.75rem;
+.content-website .comments .author{
+    display: var(--contentWebsite-comment-display-author);
+    width: var(--contentWebsite-comment-width-author);
+    box-sizing: var(--contentWebsite-comment-boxSizing-author);
+    font-family: TopicName;
+    font-size: var(--contentWebsite-comment-fontS-author);
 }

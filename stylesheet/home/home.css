@@ -1,0 +1,561 @@
+.header-website {
+    background-color: var(--r-bg-headerWebsite);
+    height: var(--r-h-headerWebsite);
+    width: var(--r-w-headerWebsite);
+}
+
+.logowebsite {
+    position: var(--headerWebsite-pos-logoWebsite);
+    align-items: var(--headerWebsite-alignI-logoWebsite);
+    align-content: var(--headerWebsite-alignC-logoWebsite);
+    top: var(--headerWebsite-top-logowebsite);
+    left: var(--headerWebsite-left-logowebsite);
+    transform:
+        translate(var(--headerWebsite-tX-logowebsite),
+            var(--headerWebsite-tY-logowebsite));
+}
+
+.logowebsite span {
+    color: var(--r-cl-content);
+    font-family: Topicname;
+    font-size: var(--headerWebsite-fontS-logoWebsite);
+}
+
+.connect {
+    margin: var(--headerWebsite-margin-connect);
+    padding: var(--headerWebsite-padding-connect);
+    height: var(--headerWebsite-height-connect);
+    width: var(--headerWebsite-height-connect);
+    padding-left: var(--headerWebsite-ppdL-connect);
+}
+
+.connect div[class^="grid-item"] {
+    position: var(--headerWebsite-connect-pos-gridItem);
+    margin: var(--headerWebsite-connect-margin-gridItem);
+    cursor: var(--headerWebsite-connect-cursor-gridItem);
+}
+
+.grid-item1 {
+    grid-area: var(--headerWebsite-connect-location-gridItem1);
+}
+
+.grid-item2 {
+    grid-area: var(--headerWebsite-connect-location-gridItem2);
+}
+
+.grid-item3 {
+    grid-area: var(--headerWebsite-connect-location-gridItem3);
+}
+
+.call-us {
+    position: var(--headerWebsite-pos-callUs);
+    right: var(--headerWebsite-right-callUs);
+    top: var(--headerWebsite-top-callUs);
+    transform: var(--headerWebsite-transf-callUs);
+    font-size: var(--headerWebsite-fontS-callUs);
+    color: var(--r-cl-content);
+    font-family: Button;
+    width: var(--headerWebsite-width-callUs);
+    height: var(--headerWebsite-height-callUs);
+    border-radius: var(--headerWebsite-borderRadius-callUs);
+    box-sizing: var(--headerWebsite-boxSizing-callUs);
+    background-color: var(--r-bg-button);
+    transition-property: var(--headerWebsite-transiProperty-callUs);
+    transition-duration: var(--headerWebsite-transiDuration-callUs);
+    transition-delay: var(--headerWebsite-transiDelay-callUs);
+    transition-timing-function: var(--headerWebsite-transiTFunc-callUs);
+    text-align: var(--headerWebsite-textA-callUs);
+    justify-content: var(--headerWebsite-justifyC-callUs);
+    cursor: var(--headerWebsite-cursor-callUs);
+}
+
+.call-us span {
+    line-height: var(--headerWebsite-callUs-lineH-text);
+}
+
+.call-us:hover {
+    letter-spacing: var(--headerWebsite-letterS-callUs_Hover);
+}
+
+.call-us:hover::after {
+    content: var(--headerWebsite-content-callUs_HoverAfter);
+}
+
+.footer-website {
+    background-color: var(--r-bg-footerWebsite);
+    height: var(--r-height-footerWebsite);
+    padding-top: var(--r-pddT-footerWebsite);
+    position: var(--r-pos-footerWebsite);
+    display: grid;
+    grid-template-columns: var(--r-grid-templateCols-footerWebsite);
+    color: var(--r-cl-content);
+    text-align: var(--r-textA-footerWebsite);
+    font-family: ContentFont;
+}
+
+.footer-website .information,
+.footer-website .policy,
+.footer-website .fullinformation,
+.footer-website .event-certificate {
+    padding: var(--footerWebsite-pdd-items);
+}
+
+.footer-website .information {
+    padding-left: var(--footerWebsite-pddL-information);
+    grid-column: var(--footerWebsite-gridC-information);
+    display: var(--footerWebsite-display-information);
+    flex-direction: var(--footerWebsite-flexDirection-information);
+}
+
+.footer-website .information span {
+    font-size: var(--footerWebsite-information-fontS-span);
+}
+
+.footer-website .policy {
+    grid-column: var(--footerWebsite-gridC-policy);
+    display: var(--footerWebsite-display-policy);
+    flex-direction: var(--footerWebsite-flexDirection-policy);
+}
+
+.footer-website .policy span {
+    font-size: var(--r-fontS-topicName);
+}
+
+.footer-website .policy a {
+    color: var(--r-cl-content);
+    text-decoration: var(--footerWebsite-policy-textDecoration-linked);
+    padding: var(--footerWebsite-policy-padding-linked);
+}
+
+.footer-website .fullinformation {
+    grid-column: var(--footerWebsite-gridC-fullinformation);
+    display: var(--footerWebsite-display-fullinformation);
+    flex-direction: var(--footerWebsite-flexDirection-fullinformation);
+}
+
+.footer-website .fullinformation span {
+    font-size: var(--r-fontS-topicName);
+}
+
+.footer-website .event-certificate {
+    padding-right: var(--footerWebsite-display-eventCerti);
+    font-size: var(--footerWebsite-flexDirection-eventCerti);
+}
+
+.footer-website .copyright {
+    padding: var(--footerWebsite-pdd-copyright);
+    opacity: var(--footerWebsite-opacity-copyright);
+}
+
+.content-website .aboutus {
+    background-color: var(--r-bg-contentWebsite--aboutUs);
+    color: var(--r-cl-content);
+    padding: var(--contentWebsite-padding-aboutus);
+}
+
+.content-website .aboutus span {
+    font-family: TopicName;
+    font-size: var(--r-fontS-topicName);
+    margin-bottom: var(--contentWebsite-marginB-aboutus_topicNameToContent);
+}
+
+.content-website .aboutus p {
+    font-family: ContentFont;
+    font-size: var(--r-fontS-content);
+    text-align: justify;
+}
+
+.content-website .comments {
+    width: var(--contentWebsite-width-comments);
+    height: var(--contentWebsite-height-comments);
+    display: var(--contentWebsite-display-comments);
+    flex-direction: var(--contentWebsite-flexDirection-comments);
+    align-items: var(--contentWebsite-alignI-comments);
+    align-content: var(--contentWebsite-alignC-comments);
+    justify-content: var(--contentWebsite-justifyC-comments);
+    color: var(--r-cl-content);
+    background-color: var(--r-bg-contentWebsite-comments);
+}
+
+.content-website .comments .quote {
+    display: var(--contentWebsite-comment-display-quote);
+    width: var(--contentWebsite-comment-width-quote);
+    box-sizing: var(--contentWebsite-comment-boxSizing-quote);
+    font-family: ContentFont;
+    font-size: var(--contentWebsite-comment-fontS-quote);
+    text-align: var(--contentWebsite-comment-textA-quote);
+}
+
+.content-website .comments .quote::before {
+    content: '"';
+    font-family: ContentFont;
+}
+
+.content-website .comments .quote::after {
+    content: '"';
+    font-family: ContentFont;
+}
+
+.content-website .comments .author {
+    display: var(--contentWebsite-comment-display-author);
+    width: var(--contentWebsite-comment-width-author);
+    box-sizing: var(--contentWebsite-comment-boxSizing-author);
+    font-family: TopicName;
+    font-size: var(--contentWebsite-comment-fontS-author);
+}
+
+.content-website .contactus {
+    position: relative;
+    min-height: var(--contentWebsite-height-contactus);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--r-bg-contentWebsite-contactUs);
+    color: var(--r-cl-content);
+    align-items: center;
+}
+
+.content-website .contactus .text {
+    font-family: ContentFont;
+    padding: var(--contentWebsite-contactus-padding-Text);
+}
+
+.content-website .contactus .text span {
+    font-family: TopicName;
+    font-size: var(--r-fontS-topicName);
+    letter-spacing: var(--r-letterS-topicName);
+}
+
+.content-website .contactus .text p {
+    font-family: ContentFont;
+}
+
+.content-website .contactus form {
+    display: grid;
+    grid-gap: var(--contentWebsite-contactus-margin-InputTex);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.content-website .contactus .form-contact input,
+.content-website .contactus .form-contact textarea {
+    margin: var(--contentWebsite-contactus-formContact-margin-Text);
+    font-size: var(--r-fontS-content);
+    padding: var(--contentWebsite-contactus-formContact-padding-Text);
+    border: none;
+    background-color: transparent;
+    color: var(--r-cl-content);
+    border: var(--contentWebsite-contactus-formContact-bdW-Text) solid var(--r-cl-content);
+    border-radius: var(--contentWebsite-contactus-formContact-bdR-Text);
+    outline: none;
+}
+
+.content-website .contactus .form-contact textarea {
+    resize: none;
+    font-size: var(--r-fontS-content);
+    text-align: justify;
+}
+
+.content-website .contactus .form-contact .form-name {
+    grid-column: span 3;
+    grid-row: 1;
+    margin-right: calc(0.5 * var(--r-gap));
+    ;
+}
+
+.content-website .contactus .form-contact .form-email {
+    grid-column: span 3;
+    grid-row: 1;
+    margin-left: calc(0.5 * var(--r-gap));
+}
+
+
+.content-website .contactus .form-contact .form-phone {
+    grid-column-end: span 6;
+}
+
+.content-website .contactus .form-contact .form-message {
+    grid-column-end: span 6;
+}
+
+.content-website .contactus .form-contact .button-send {
+    margin: var(--contentWebsite-contactus-margin-buttonSend);
+    font-size: var(--r-fontS-content);
+    font-family: ContentFont;
+    cursor: pointer;
+    grid-column: 6;
+    text-align: center;
+    border: none;
+    height: var(--contentWebsite-contactus-formContact-height-buttonSend);
+    width: var(--contentWebsite-contactus-formContacts-width-buttonSend);
+    border-radius: var(--contentWebsite-contactus-formContact-bdR-buttonSend);
+    background-color: var(--r-bg-button);
+    color: var(--r-cl-content);
+    transition-duration: var(--contentWebsite-contactus-transiDuration-buttonSend);
+    -o-transition-duration: var(--contentWebsite-contactus-transiDuration-buttonSend);
+    -moz-transition-duration: var(--contentWebsite-contactus-transiDuration-buttonSend);
+    -webkit-transition-duration: var(--contentWebsite-contactus-transiDuration-buttonSend);
+}
+
+.content-website .contactus .form-contact .button-send:hover {
+    letter-spacing: var(--contentWebsite-contactus-formContacts-letterS-buttonSend_Hover);
+}
+
+.content-website .introduction div[class^="back"] {
+    width: var(--contentWebsite-introduction-width-back);
+    z-index: var(--contentWebsite-introduction-zIndex-back);
+    position: var(--contentWebsite-introduction-pos-back);
+}
+
+.content-website .introduction div[class^="back"] img {
+    opacity: var(--contentWebsite-introduction-back-opacity-img);
+    width: var(--contentWebsite-introduction-back-width-img);
+}
+
+.content-website .introduction .back1 img {
+    animation-name: var(--contentWebsite-introduction-back1-animName-img);
+    animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    animation-delay: var(--time-begin);
+    animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -o-animation-name: var(--contentWebsite-introduction-back1-animName-img);
+    -o-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -o-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -o-animation-delay: var(--time-begin);
+    -o-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -o-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -moz-animation-name: var(--contentWebsite-introduction-back1-animName-img);
+    -moz-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -moz-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -moz-animation-delay: var(--time-begin);
+    -moz-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -moz-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -webkit-animation-name: var(--contentWebsite-introduction-back1-animName-img);
+    -webkit-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -webkit-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -webkit-animation-delay: var(--time-begin);
+    -webkit-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -webkit-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    filter: var(--contentWebsite-introduction-back1-filter-img);
+}
+
+.content-website .introduction .back2 img {
+    animation-name: var(--contentWebsite-introduction-back2-animName-img);
+    animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    animation-delay: var(--time-begin);
+    animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -o-animation-name: var(--contentWebsite-introduction-back2-animName-img);
+    -o-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -o-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -o-animation-delay: var(--time-begin);
+    -o-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -o-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -moz-animation-name: var(--contentWebsite-introduction-back2-animName-img);
+    -moz-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -moz-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -moz-animation-delay: var(--time-begin);
+    -moz-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -moz-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -webkit-animation-name: var(--contentWebsite-introduction-back2-animName-img);
+    -webkit-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -webkit-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -webkit-animation-delay: var(--time-begin);
+    -webkit-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -webkit-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    filter: var(--contentWebsite-introduction-back2-filter-img);
+}
+
+.content-website .introduction .back3 img {
+    animation-name: var(--contentWebsite-introduction-back3-animName-img);
+    animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    animation-delay: var(--time-begin);
+    animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -o-animation-name: var(--contentWebsite-introduction-back3-animName-img);
+    -o-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -o-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -o-animation-delay: var(--time-begin);
+    -o-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -o-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -moz-animation-name: var(--contentWebsite-introduction-back3-animName-img);
+    -moz-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -moz-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -moz-animation-delay: var(--time-begin);
+    -moz-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -moz-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -webkit-animation-name: var(--contentWebsite-introduction-back3-animName-img);
+    -webkit-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -webkit-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -webkit-animation-delay: var(--time-begin);
+    -webkit-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -webkit-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    filter: var(--contentWebsite-introduction-back3-filter-img);
+}
+
+.content-website .introduction .back4 img {
+    animation-name: var(--contentWebsite-introduction-back4-animName-img);
+    animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    animation-delay: var(--time-begin);
+    animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -o-animation-name: var(--contentWebsite-introduction-back4-animName-img);
+    -o-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -o-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -o-animation-delay: var(--time-begin);
+    -o-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -o-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -moz-animation-name: var(--contentWebsite-introduction-back4-animName-img);
+    -moz-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -moz-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -moz-animation-delay: var(--time-begin);
+    -moz-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -moz-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    -webkit-animation-name: var(--contentWebsite-introduction-back4-animName-img);
+    -webkit-animation-duration: var(--contentWebsite-introduction-back-animDuration-img);
+    -webkit-animation-iteration-count: var(--contentWebsite-introduction-back-animIterCount-img);
+    -webkit-animation-delay: var(--time-begin);
+    -webkit-animation-fill-mode: var(--contentWebsite-introduction-back-animFillmode-img);
+    -webkit-animation-timing-function: var(--contentWebsite-introduction-back-animTFunc-img);
+    filter: var(--contentWebsite-introduction-back4-filter-img);
+}
+
+.content-website .introduction {
+    position: var(--contentWebsite-pos-introduction);
+    width: var(--contentWebsite-width-introduction);
+    height: var(--contentWebsite-height-introduction);
+    background-color: black;
+    overflow: hidden;
+}
+
+.content-website .introduction .text {
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    height: var(--contentWebsite-introduction-height-text);
+    text-align: var(--contentWebsite-introduction-textA-text);
+    align-items: var(--contentWebsite-introduction-alignI-text);
+    justify-content: var(--contentWebsite-introduction-justifyC-text);
+    color: var(--r-cl-content);
+}
+
+.content-website .introduction .text h1 {
+    font-family: TopicName;
+    font-size: var(--contentWebsite-introduction-text-fontS-h1);
+}
+
+.content-website .introduction .text p {
+    display: var(--contentWebsite-introduction-text-display-p);
+    font-family: ContentFont;
+    font-size: var(--contentWebsite-introduction-text-fontS-p);
+    width: var(--contentWebsite-introduction-text-width-p);
+}
+
+.content-website .myservices {
+    height: var(--contentWebsite-height-myservices);
+    background-color: var(--r-bg-contentWebsite-myservices);
+    color: var(--r-cl-content);
+}
+
+.myareans {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--contentWebsite-myservices-gap-myareans);
+    margin: var(--contentWebsite-myservices-margin-myareans);
+}
+
+.myservices {
+    text-align: center;
+    justify-content: center;
+    font-size: var(--contentwebsite-fontS-myservices);
+    height: calc(var(--contentWebsite-height-myservices) - var(--r-lineH-topicName));
+    font-family: ContentFont;
+}
+
+.myservices span {
+    padding-top: var(--r-paddT-topicName);
+    line-height: var(--r-lineH-topicName);
+    text-align: center;
+    justify-content: center;
+    font-size: var(--r-fontS-topicName);
+    font-family: TopicName;
+    letter-spacing: var(--r-letterS-topicName);
+}
+
+.myareans .item-grid {
+    margin: var(--contentWebsite-myservices-myareans-margin-itemGrid);
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+}
+
+.item-grid img {
+    border-radius: var(--contentWebsite-myservices-myareans-itemGrid-borderRadius-img);
+    margin: var(--contentWebsite-myservices-myareans-itemGrid-margin-img);
+    height: var(--contentWebsite-myservices-myareans-itemGrid-size-img);
+    width: var(--contentWebsite-myservices-myareans-itemGrid-size-img);
+}
+
+.item-grid .product-name,
+.item-grid .product-detail {
+    width: var(--contentWebsite-myservices-myareans-itemGrid-size-img);
+    text-align: var(--contentWebsite-myservices-myareans-textAlign-itemGrid);
+}
+
+.item-grid .product-name {
+    margin: var(--contentWebsite-myservices-myareans-itemGrid-margin-productName);
+}
+
+.item-grid .product-detail {
+    margin: var(--contentWebsite-myservices-myareans-itemGrid-margin-productDetail);
+}
+
+.item-grid .product-detail {
+    position: relative;
+    text-align: justify;
+    mask-image: linear-gradient(to bottom,
+            var(--contentWebsite-bgB-myservices),
+            var(--contentWebsite-bgT-myservices));
+    mask-repeat: no-repeat;
+    -o-mask-image: linear-gradient(to bottom, var(--contentWebsite-bgB-myservices),
+            var(--contentWebsite-bgT-myservices));
+    -o-mask-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom,
+            var(--contentWebsite-bgB-myservices),
+            var(--contentWebsite-bgT-myservices));
+    -webkit-mask-repeat: no-repeat;
+}
+
+.item-grid .readmore {
+    text-decoration: var(--contentWebsite-myservices-myareans-itemGrid-textDecoration-readmore);
+    margin: var(--contentWebsite-myservices-margin-readmore);
+    margin-top: var(--contentWebsite-myservices-marginT-readmore);
+    padding: var(--contentWebsite-myservices-pd-readmore);
+    color: var(--r-cl-content);
+    border-radius: var(--contentWebsite-myservices-bdR-readmore);
+    border: var(--contentWebsite-myservices-bdW-readmore) solid var(--r-cl-content);
+    width: var(--contentWebsite-myservices-width-readmore);
+    transition-property: var(--contentWebsite-myservices-transiProperty-readmore);
+    transition-duration: var(--contentWebsite-myservices-transiDuration-readmore);
+    transition-delay: var(--contentWebsite-myservices-transiDelay-readmore);
+    transition-timing-function: var(--contentWebsite-myservices-transiTFunc-readmore);
+    -o-transition-property: var(--contentWebsite-myservices-transiProperty-readmore);
+    -o-transition-duration: var(--contentWebsite-myservices-transiDuration-readmore);
+    -o-transition-delay: var(--contentWebsite-myservices-transiDelay-readmore);
+    -o-transition-timing-function: var(--contentWebsite-myservices-transiTFunc-readmore);
+    -moz-transition-property: var(--contentWebsite-myservices-transiProperty-readmore);
+    -moz-transition-duration: var(--contentWebsite-myservices-transiDuration-readmore);
+    -moz-transition-delay: var(--contentWebsite-myservices-transiDelay-readmore);
+    -moz-transition-timing-function: var(--contentWebsite-myservices-transiTFunc-readmore);
+    -webkit-transition-property: var(--contentWebsite-myservices-transiProperty-readmore);
+    -webkit-transition-duration: var(--contentWebsite-myservices-transiDuration-readmore);
+    -webkit-transition-delay: var(--contentWebsite-myservices-transiDelay-readmore);
+    -webkit-transition-timing-function: var(--contentWebsite-myservices-transiTFunc-readmore);
+}
+
+.item-grid .readmore:hover {
+    letter-spacing: var(--contentWebsite-myservices-letterS-readmore_Hover);
+    color: var(--contentWebsite-myservices-cl-readmore_Hover);
+    background-color: var(--contentWebsite-myservices-bg-readmore_Hover);
+}

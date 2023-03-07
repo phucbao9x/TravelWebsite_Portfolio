@@ -1,87 +1,62 @@
 .content-website .contactus{
     position: relative;
-    min-height: var(--height-contentWebsite-contactUs);
+    min-height: var(--contentWebsite-height-contactus);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: var(--background-contactus);
-    color: var(--coloroftext);
+    background-color: var(--r-bg-contentWebsite-contactUs);
+    color: var(--r-cl-content);
     align-items: center;
 }
 
 .content-website .contactus .text{
-    font-family: MerriweatherBold;
-    padding: var(--padding-contentWebsite-contactUs-text);
+    font-family: ContentFont;
+    padding: var(--contentWebsite-contactus-padding-Text);
 }
 
 .content-website .contactus .text span{
-    font-size: var(--font-size-headername-span);
-    letter-spacing: var(--letter-spacing-headername-span);
+    font-family: TopicName;
+    font-size: var(--r-fontS-topicName);
+    letter-spacing: var(--r-letterS-topicName);
 }
 
 .content-website .contactus .text p {
-    font-family: Mulish-VariableFont_wght;
+    font-family: ContentFont;
 }
 
 .content-website .contactus form{
     display: grid;
-    grid-gap: var(--margin-contentWebsite-contactUs-InputText);
+    grid-gap: var(--contentWebsite-contactus-margin-InputTex);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.content-website .contactus .form-contact label{
-    font-size: var(--font-size-text);
-    color: var(--coloroftext);
-    opacity: 0.7;
-}
-
 .content-website .contactus .form-contact input, .content-website .contactus .form-contact textarea {
-    margin: var(--margin-contentWebsite-contactUs-InputText);
-    font-size: var(--font-size-text);
-    background-color: #666;
-    padding: var(--padding-contentWebsite-contactUs-InputText);
+    margin: var(--contentWebsite-contactus-formContact-margin-Text);
+    font-size: var(--r-fontS-content);
+    padding: var(--contentWebsite-contactus-formContact-padding-Text);
     border: none;
-    color: var(--coloroftext);
-    border-bottom: 3px solid transparent;
-    padding-bottom: 3px;
+    background-color: transparent;
+    color: var(--r-cl-content);
+    border: var(--contentWebsite-contactus-formContact-bdW-Text) solid var(--r-cl-content);
+    border-radius: var(--contentWebsite-contactus-formContact-bdR-Text);
     outline: none;
-    transition: var(--transition-contentwebsite-contactUs-InputText);
-    -o-transition: var(--transition-contentwebsite-contactUs-InputText);
-    -ms-transition: var(--transition-contentwebsite-contactUs-InputText);
-    -webkit-transition: var(--transition-contentwebsite-contactUs-InputText);
 }
 
 .content-website .contactus .form-contact textarea {
     resize:none;
-    font-size: calc(var(--font-size-text) * 1.14);
-    padding: var(--padding-contentWebsite-contactUs-TextArea);
-    justify-content: center;
+    font-size: var(--r-fontS-content);
     text-align: justify;
-    min-height: 150px;
 }
-
-.content-website .contactus .form-contact button {
-    margin: var(--margin-contentWebsite-contactUs-Button);
-    font-size: var(--font-size-text);
-    font-family: MulishLight;
-    cursor: pointer;
-}
-
-.fomt-contact input.active{
-    color: var(--coloroftext);
-    border-bottom: 2px solid var(--coloroftext);
-}
-
 
 .content-website .contactus .form-contact .form-name {
     grid-column: span 3;
     grid-row: 1;
-    margin-right: calc(0.5 * var(--gap-contentWebsite-GridGap));;
+    margin-right: calc(0.5 * var(--r-gap));;
 }
 
 .content-website .contactus .form-contact .form-email{
     grid-column: span 3;
     grid-row: 1;
-    margin-left: calc(0.5 * var(--gap-contentWebsite-GridGap));
+    margin-left: calc(0.5 * var(--r-gap));
 }
 
 
@@ -90,16 +65,27 @@
 }
 .content-website .contactus .form-contact .form-message{
     grid-column-end: span 6;
-    min-height: minmax(120px, auto);
 }
 
 .content-website .contactus .form-contact .button-send{
+    margin: var(--contentWebsite-contactus-margin-buttonSend);
+    font-size: var(--r-fontS-content);
+    font-family: ContentFont;
+    cursor: pointer;
     grid-column: 6;
     text-align: center;
-    height: var(--height-contentWebsite-contactus-formContact-buttonSend);
-    width: var(--width-contentWebsite-contactus-formContact-buttonSend);
     border: none;
-    border-radius: var(--borderRadius-contentWebsite-contactus-formContact-buttonSend);
-    background-color: var(--background-button);
-    color: var(--coloroftext);
+    height: var(--contentWebsite-contactus-formContact-height-buttonSend);
+    width: var(--contentWebsite-contactus-formContacts-width-buttonSend);
+    border-radius: var(--contentWebsite-contactus-formContact-bdR-buttonSend);
+    background-color: var(--r-bg-button);
+    color: var(--r-cl-content);
+    transition-duration: var(--contentWebsite-contactus-transiDuration-buttonSend);
+    -o-transition-duration: var(--contentWebsite-contactus-transiDuration-buttonSend);
+    -moz-transition-duration: var(--contentWebsite-contactus-transiDuration-buttonSend);
+    -webkit-transition-duration: var(--contentWebsite-contactus-transiDuration-buttonSend);
+}
+
+.content-website .contactus .form-contact .button-send:hover {
+    letter-spacing: var(--contentWebsite-contactus-formContacts-letterS-buttonSend_Hover);
 }

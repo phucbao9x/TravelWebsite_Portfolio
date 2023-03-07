@@ -1,5 +1,264 @@
+
+* {
+    /* Setting page here */
+    /* [v] Setting for all: */
+    --r-fontS-topicName: 2rem;
+    --r-lineH-topicName: 45px;
+    --r-letterS-topicName: 0.115rem;
+    --r-paddT-topicName: 20px;
+    --r-fontS-content: 1.15rem;
+    --r-gap: 10px;
+    /* Information: */
+    --time-begin: 0s;
+
+    /* Setting Color */
+    --r-cl-content: #fff;
+    --r-bg-headerWebsite: #111111;
+    --r-bg-button: #FFCF00;
+    --r-bg-contentWebsite-comments: #222;
+    --r-bg-contentWebsite-myservices: #333333;
+    --r-bg-contentWebsite-contactUs: #333333;
+    --r-bg-contentWebsite--aboutUs: #222;
+
+    --r-bg-footerWebsite: #0066B2;
+
+
+    --r-h-headerWebsite: 90px;
+    --r-w-headerWebsite: 100%;
+    --headerWebsite-top-logowebsite: 45px;
+    --headerWebsite-left-logowebsite: 50%;
+    --headerWebsite-tX-logowebsite: -50%;
+    --headerWebsite-tY-logowebsite: -50%;
+    --headerWebsite-fontS-logoWebsite: 2.2rem;
+    --headerWebsite-alignC-logoWebsite: center;
+    --headerWebsite-pos-logoWebsite: absolute;
+    --headerWebsite-alignI-logoWebsite: center;
+    --headerWebsite-margin-connect: 0;
+    --headerWebsite-padding-connect: 0;
+    --headerWebsite-pddL-connect: 8px;
+    --headerWebsite-height-connect: 90px;
+    --headerWebsite-width-connect: 100px;
+    --headerWebsite-connect-pos-gridItem: relative;
+    --headerWebsite-connect-margin-gridItem: auto 0;
+    --headerWebsite-connect-cursor-gridItem: pointer;
+    --headerWebsite-connect-location-gridItem1: col1;
+    --headerWebsite-connect-location-gridItem2: col2;
+    --headerWebsite-connect-location-gridItem3: col3;
+    --headerWebsite-pos-callUs: absolute;
+    --headerWebsite-letterS-callUs_Hover: 0.05rem;
+    --headerWebsite-content-callUs_HoverAfter: "\260E";
+    --headerWebsite-right-callUs: 20px;
+    --headerWebsite-top-callUs: 45px;
+    --headerWebsite-transf-callUs: translate(0, -50%);
+    --headerWebsite-fontS-callUs: 1.45rem;
+    --headerWebsite-width-callUs: 180px;
+    --headerWebsite-height-callUs: 50px;
+    --headerWebsite-borderRadius-callUs: 7px;
+    --headerWebsite-boxSizing-callUs: content-box;
+    --headerWebsite-transiProperty-callUs: all;
+    --headerWebsite-transiDuration-callUs: 0.675s;
+    --headerWebsite-transiDelay-callUs: 0s;
+    --headerWebsite-transiTFunc-callUs: ease;
+    --headerWebsite-textA-callUs: center;
+    --headerWebsite-justifyC-callUs: center;
+    --headerWebsite-cursor-callUs: pointer;
+    --headerWebsite-callUs-lineH-text: 50px;
+
+    --contentWebsite-introduction-width-back: 100%;
+    --contentWebsite-introduction-zIndex-back: 0;
+    --contentWebsite-introduction-pos-back: absolute;
+    --contentWebsite-introduction-back-opacity-img: 0;
+    --contentWebsite-introduction-back-width-img: 100%;
+
+    --contentWebsite-introduction-back-animDuration-img: 20s;
+    --contentWebsite-introduction-back-animIterCount-img: infinite;
+    --contentWebsite-introduction-back-animFillmode-img: forwards;
+    --contentWebsite-introduction-back-animTFunc-img: ease;
+    --contentWebsite-introduction-back1-animName-img: load1;
+    --contentWebsite-introduction-back1-filter-img: brightness(45%);
+    --contentWebsite-introduction-back2-animName-img: load2;
+    --contentWebsite-introduction-back2-filter-img: brightness(45%);
+    --contentWebsite-introduction-back3-animName-img: load3;
+    --contentWebsite-introduction-back3-filter-img: brightness(46%);
+    --contentWebsite-introduction-back4-animName-img: load4;
+    --contentWebsite-introduction-back4-filter-img: brightness(40%);
+
+    --contentWebsite-pos-introduction: relative;
+    --contentWebsite-width-introduction: 100%;
+    --contentWebsite-height-introduction: 100vh;
+
+    --contentWebsite-introduction-height-text: 100%;
+    --contentWebsite-introduction-textA-text: center;
+    --contentWebsite-introduction-alignI-text: center;
+    --contentWebsite-introduction-justifyC-text: center;
+    --contentWebsite-introduction-text-fontS-h1: 2.15rem;
+    --contentWebsite-introduction-text-display-p: inline-block;
+    --contentWebsite-introduction-text-fontS-p: 1.35rem;
+    --contentWebsite-introduction-text-width-p: 50%;
+
+
+    --contentWebsite-width-comments: 100%;
+    --contentWebsite-height-comments: 320px;
+    --contentWebsite-display-comments: flex;
+    --contentWebsite-flexDirection-comments: column;
+    --contentWebsite-alignI-comments: center;
+    --contentWebsite-alignC-comments: center;
+    --contentWebsite-justifyC-comments: center;
+    --contentWebsite-comment-display-quote: inline-block;
+    --contentWebsite-comment-width-quote: 70%;
+    --contentWebsite-comment-boxSizing-quote: border-box;
+    --contentWebsite-comment-fontS-quote: 1.5rem;
+    --contentWebsite-comment-textA-quote: justify;
+
+    --contentWebsite-comment-display-author: inline-block;
+    --contentWebsite-comment-width-author: 70%;
+    --contentWebsite-comment-boxSizing-author: border-box;
+    --contentWebsite-comment-fontS-author: 1.7rem;
+
+    --contentWebsite-height-myservices: 120vh;
+    --contentWebsite-fontS-myservices: 1.02rem;
+
+    --contentWebsite-bgT-myservices: rgba(51, 51, 51, 0.2);
+    --contentWebsite-bgB-myservices: rgba(51, 51, 51, 0.9);
+
+    --contentWebsite-myservices-gap-myareans: 10px;
+    --contentWebsite-myservices-margin-myareans: 10px 0px;
+    --contentWebsite-myservices-myareans-margin-itemGrid: 10px 5px;
+    --contentWebsite-myservices-myareans-textAlign-itemGrid: center;
+    --contentWebsite-myservices-myareans-itemGrid-borderRadius-img: 10px;
+    --contentWebsite-myservices-myareans-itemGrid-size-img: 350px;
+    --contentWebsite-myservices-myareans-itemGrid-margin-img: 0 auto;
+    --contentWebsite-myservices-myareans-itemGrid-margin-img: 0 auto;
+    --contentWebsite-myservices-myareans-itemGrid-margin-img: 0 auto;
+    --contentWebsite-myservices-myareans-itemGrid-margin-productName: 0 auto;
+    --contentWebsite-myservices-myareans-itemGrid-margin-productDetail: 0 auto;
+
+    --contentWebsite-myservices-textDecoration-readmore: none;
+    --contentWebsite-myservices-margin-readmore: 0 auto;
+    --contentWebsite-myservices-marginT-readmore: 6px;
+    --contentWebsite-myservices-pd-readmore: 9px;
+    --contentWebsite-myservices-bdR-readmore: 15px;
+    --contentWebsite-myservices-bdW-readmore: 3px;
+    --contentWebsite-myservices-width-readmore: 150px;
+    --contentWebsite-myservices-transiProperty-readmore: all;
+    --contentWebsite-myservices-transiDuration-readmore: 0.45s;
+    --contentWebsite-myservices-transiDelay-readmore: 0s;
+    --contentWebsite-myservices-transiTFunc-readmore: ease;
+    --contentWebsite-myservices-letterS-readmore_Hover: 0.125rem;
+    --contentWebsite-myservices-cl-readmore_Hover: #333;
+    --contentWebsite-myservices-bg-readmore_Hover: #fff;
+
+
+    --contentWebsite-height-contactus: 75vh;
+    --contentWebsite-contactus-padding-Text: 50px;
+    --contentWebsite-contactus-formContact-padding-Text: 8px;
+    --contentWebsite-contactus-formContact-margin-Text: var(--r-gap) 50px 0px var(--r-gap);
+    --contentWebsite-contactus-formContact-bdW-Text: 2px;
+    --contentWebsite-contactus-formContact-bdR-Text: 8px;
+    --contentWebsite-contactus-formContact-bdR-buttonSend: 8px;
+    --contentWebsite-contactus-formContact-height-buttonSend: 40px;
+    --contentWebsite-contactus-formContacts-width-buttonSend: 120px;
+    --contentWebsite-contactus-formContacts-letterS-buttonSend_Hover: 0.123rem;
+    --contentWebsite-contactus-margin-buttonSend: 10px 50px 0 0;
+    --contentWebsite-contactus-transiDuration-buttonSend: 0.515s;
+
+    --contentWebsite-padding-aboutus: 30px 50px 50px 50px;
+    --contentWebsite-marginB-aboutus_topicNameToContent: 25px;
+
+
+    /* Footer Website */
+    --r-height-footerWebsite: fit-content;
+    --r-pddT-footerWebsite: 30px;
+    --r-pos-footerWebsite: relative;
+    --r-grid-templateCols-footerWebsite: repeat(4, 1fr);
+    --r-textA-footerWebsite: justify;
+
+    --footerWebsite-pdd-items: 20px;
+
+    --footerWebsite-pddL-information: 50px;
+    --footerWebsite-gridC-information: 1;
+    --footerWebsite-display-information: flex;
+    --footerWebsite-flexDirection-information: column;
+    --footerWebsite-information-fontS-span: 2.2rem;
+
+    --footerWebsite-gridC-policy: 2;
+    --footerWebsite-display-policy: flex;
+    --footerWebsite-flexDirection-policy: column;
+
+    --footerWebsite-policy-textDecoration-linked: none;
+    --footerWebsite-policy-padding-linked: 7px 0px;
+
+    --footerWebsite-gridC-fullinformation: 3;
+    --footerWebsite-display-fullinformation: flex;
+    --footerWebsite-flexDirection-fullinformation: column;
+
+    --footerWebsite-display-eventCerti: 50px;
+    --footerWebsite-flexDirection-eventCerti: 1.5rem;
+
+    --footerWebsite-pdd-copyright: 0 0 4px 4px;
+    --footerWebsite-opacity-copyright: 0.35;
+}
+
+html,
+body,
+div,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+span,
+pre,
+strong,
+i,
+b,
+h1,
+img,
+h2,
+h3,
+input,
+h4,
+h5,
+h6 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.grid-column {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.cols3 {
+    grid: 'col1 col2 col3';
+}
+
+@font-face {
+    font-family: TopicName;
+    src: url("../../asserts/Merriweather-Bold.ttf");
+}
+
+@font-face {
+    font-family: ContentFont;
+    src: url('../../asserts/static/Mulish-Light.ttf');
+}
+
+@font-face {
+    font-family: Button;
+    src: url('../../asserts/Mulish-VariableFont_wght.ttf');
+}
+
 @keyframes slideBottomToTop {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(100%);
         -o-transform: translateY(100%);
@@ -7,7 +266,10 @@
         -moz-transform: translateY(100%);
         -webkit-transform: translateY(100%);
     }
-    100%{opacity: 1;}
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes slideTopToBottom {
@@ -20,7 +282,9 @@
         -webkit-transform: translateY(-100%);
     }
 
-    100% {opacity: 1;}
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes slideLeftToRight {
@@ -33,7 +297,9 @@
         -webkit-transform: translateX(-100%);
     }
 
-    100% {opacity: 1;}
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes slideRightToLeft {
@@ -46,12 +312,21 @@
         -webkit-transform: translateX(100%);
     }
 
-    100% {opacity: 1;}
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes showup {
-    0%{opacity: 0;scale: 0;}
-    100%{opacity: 1; scale: 1;}
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 
@@ -62,7 +337,8 @@
     }
 
     100% {
-        opacity: 0;scale: 0;
+        opacity: 0;
+        scale: 0;
     }
 }
 
@@ -92,8 +368,8 @@
         transform: translateY(-50px)
     }
 
-    100% {
-        opacity: 0;
+    95% {
+        opacity: 0.5;
         scale: 2;
         transform: translateX(230px) translateY(-160px);
     }
@@ -158,12 +434,13 @@
 }
 
 @keyframes load4 {
-    0% {
+    1% {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(0px);
     }
 
     25% {
+        scale:1;
         opacity: 0;
         transform: translateY(-100px);
     }
@@ -180,21 +457,20 @@
         opacity: 1;
         transform: translateY(-50px);
         scale: 1;
-        scale: 1;
     }
-
+    85%{scale:1;}
     90% {
+        scale: 2;
         transform: translateY(-100px);
     }
 
-    100% {
-        scale: 2;
+    100% {scale: 2;
         transform: translateY(-240px);
         opacity: 1;
     }
 }
 
-.hide-effect{
+.hide-effect {
     opacity: 1;
     animation-name: hide-effect;
     -webkit-animation-name: hide-effect;
@@ -228,7 +504,7 @@
     -webkit-animation-iteration-count: var(--iteration-count);
 }
 
-.showup{
+.showup {
     opacity: 0;
     animation-name: showup;
     -webkit-animation-name: showup;
@@ -262,7 +538,7 @@
     -webkit-animation-iteration-count: var(--iteration-count);
 }
 
-.slideToTop{
+.slideToTop {
     opacity: 0;
     animation-name: slideBottomToTop;
     -webkit-animation-name: slideBottomToTop;
@@ -329,7 +605,7 @@
     -webkit-animation-iteration-count: var(--iteration-count);
 }
 
-.slideToLeft{
+.slideToLeft {
     opacity: 0;
     animation-name: slideRightToLeft;
     -webkit-animation-name: slideRightToLeft;
@@ -361,7 +637,8 @@
     -webkit-animation-delay: calc(var(--time-begin, 0s) + var(--time-delay, 0s) * var(--id-event, 1));
     -webkit-animation-iteration-count: var(--iteration-count);
 }
-.slideToRight{
+
+.slideToRight {
     opacity: 0;
     animation-name: slideLeftToRight;
     -webkit-animation-name: slideLeftToRight;

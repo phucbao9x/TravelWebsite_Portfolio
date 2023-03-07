@@ -1,0 +1,65 @@
+.footer-website{
+    background-color: var(--r-bg-footerWebsite);
+    height: var(--r-height-footerWebsite);
+    padding-top: var(--r-pddT-footerWebsite);
+    position: var(--r-pos-footerWebsite);
+    display: grid;
+    grid-template-columns: var(--r-grid-templateCols-footerWebsite);
+    color: var(--r-cl-content);
+    text-align: var(--r-textA-footerWebsite);
+    font-family: ContentFont;
+}
+
+.footer-website .information, 
+.footer-website .policy, 
+.footer-website .fullinformation, 
+.footer-website .event-certificate{
+    padding: var(--footerWebsite-pdd-items);
+}
+
+.footer-website .information{
+    padding-left: var(--footerWebsite-pddL-information);
+    grid-column: var(--footerWebsite-gridC-information);
+    display: var(--footerWebsite-display-information);
+    flex-direction: var(--footerWebsite-flexDirection-information);
+}
+
+.footer-website .information span{
+    font-size: var(--footerWebsite-information-fontS-span);
+}
+
+.footer-website .policy{
+    grid-column: var(--footerWebsite-gridC-policy);
+    display: var(--footerWebsite-display-policy);
+    flex-direction: var(--footerWebsite-flexDirection-policy);
+}
+
+.footer-website .policy span{
+    font-size: var(--r-fontS-topicName);
+}
+
+.footer-website .policy a{
+    color: var(--r-cl-content);
+    text-decoration: var(--footerWebsite-policy-textDecoration-linked);
+    padding: var(--footerWebsite-policy-padding-linked);
+}
+
+.footer-website .fullinformation{
+    grid-column: var(--footerWebsite-gridC-fullinformation);
+    display: var(--footerWebsite-display-fullinformation);
+    flex-direction: var(--footerWebsite-flexDirection-fullinformation);
+}
+
+.footer-website .fullinformation span{
+    font-size: var(--r-fontS-topicName);
+}
+
+.footer-website .event-certificate{
+    padding-right: var(--footerWebsite-display-eventCerti);
+    font-size: var(--footerWebsite-flexDirection-eventCerti);
+}
+
+.footer-website .copyright{
+    padding: var(--footerWebsite-pdd-copyright);
+    opacity: var(--footerWebsite-opacity-copyright);
+}

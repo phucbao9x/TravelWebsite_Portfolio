@@ -1,0 +1,17 @@
+.content-website .aboutus{
+    background-color: var(--r-bg-contentWebsite--aboutUs);
+    color: var(--r-cl-content);
+    padding: var(--contentWebsite-padding-aboutus);
+}
+
+.content-website .aboutus span{
+    font-family: TopicName;
+    font-size: var(--r-fontS-topicName);
+    margin-bottom: var(--contentWebsite-marginB-aboutus_topicNameToContent);
+}
+
+.content-website .aboutus p{
+    font-family: ContentFont;
+    font-size: var(--r-fontS-content);
+    text-align: justify;
+}

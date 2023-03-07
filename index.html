@@ -6,19 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel App</title>
     <!-- [v]: Add root css -->
-    <link rel="stylesheet" href="./stylesheet/root/reset.css">
-    <link rel="stylesheet" href="./stylesheet/root/grid-system.css">
-    <link rel="stylesheet" href="./stylesheet/root/color.css">
-    <link rel="stylesheet" href="./stylesheet/root/root-settingValue.css">
-    <link rel="stylesheet" href="./stylesheet/root/font-face.css">
-    <link rel="stylesheet" href="./stylesheet/root/root-effect.css">
-    <!-- [v]: Add header css -->
-    <link rel="stylesheet" href="./stylesheet/home/header/config-header.css">
-    <!-- [ ] Add content css -->
-    <link rel="stylesheet" href="./stylesheet/home/content/config-content-comments.css">
-    <link rel="stylesheet" href="./stylesheet/home/content/config-content-introduction.css">
-    <link rel="stylesheet" href="./stylesheet/home/content/config-content-myservices.css">
-    <link rel="stylesheet" href="./stylesheet/home/content/config-content-contactus.css">
+    <link rel="stylesheet" href="./stylesheet/root/root-for-home.css">
+    <!-- [v]: Add home css -->
+    <link rel="stylesheet" href="./stylesheet/home/home.css">
 </head>
 <body>
     <div id="app"  style="--time-begin: 1.25s; --time-delay:0.125s;--interaction-count:1">
@@ -35,7 +25,7 @@
                 </div>
             </div>
             <div class="logowebsite" style="--id-event:1">
-                <span class="showup">Travel</span>
+                <span class="logo showup">Travel</span>
             </div>
             <div class="call-us slideToLeft" style="--id-event:6">
                 <span>Call Us</span>
@@ -61,32 +51,32 @@
                 </div>
             </div>
             <div class="comments">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt consequaturquos, molestiae quisquam modi eius praesentium voluptates corporis magni expedita labore, ipsa quidem eum. Aliquam eos repellat tempora assumenda illo.</p>
-                <strong>Limi</strong>
+                <p class="quote">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt consequaturquos, molestiae quisquam modi eius praesentium voluptates corporis magni expedita labore, ipsa quidem eum. Aliquam eos repellat tempora assumenda illo.</p>
+                <strong class="author">Limi</strong>
             </div>
             <div class="myservices">
                 <span>Our products</span>
                 <div class="grid-column myareans">
                     <div class="item-grid">
                         <img src="asserts/image/content-201000.png" alt="Camping">
-                        <h1>Camping services</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste provident distinctio odit fugiat 
+                        <h1 class="product-name">Camping services</h1>
+                        <p class="product-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste provident distinctio odit fugiat 
                             consectetur similique saepe...</p>
-                        <a class="button-style1" href="#">Read more</a>
+                        <a class="readmore" href="#">Read more</a>
                     </div>
                     <div class="item-grid">
                         <img src="asserts/image/content-201001.png" alt="Car & Airplane booking">
-                        <h1>Moving services</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste provident distinctio odit fugiat
+                        <h1 class="product-name">Moving services</h1>
+                        <p class="product-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste provident distinctio odit fugiat
                             consectetur similique saepe...</p>
-                        <a class="button-style1" href="#">Read more</a>
+                        <a class="readmore" href="#">Read more</a>
                     </div>
                     <div class="item-grid">
                         <img src="asserts/image/content-201002.jpg" alt="Tour & Hotel booking">
-                        <h1>Book a Tour</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste provident distinctio odit fugiat
+                        <h1 class="product-name">Book a Tour</h1>
+                        <p class="product-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste provident distinctio odit fugiat
                             consectetur similique saepe...</p>
-                        <a class="button-style1" href="#">Read more</a>
+                        <a class="readmore" href="#">Read more</a>
                     </div>
                 </div>
             </div>
@@ -98,12 +88,54 @@
                 <form action="" class="form-contact">
                     <input class="form-name" placeholder="Name" type="text" name="namecustom" id="name">
                     <input placeholder="Email" class="form-email" type="text" name="emailcustom" id="email"><input class="form-phone" placeholder="Number phone" type="text" name="numberphonecustom" id="numberphone">
-                    <textarea class="form-message" placeholder="Message" name="messagecustom" id="message"></textarea>
+                    <textarea row="5" class="form-message" placeholder="Message" name="messagecustom" id="message"></textarea>
                     <button class="button-send">Send</button>
                 </form>
             </div>
+            <div class="aboutus">
+                <span>About us</span><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur sit maiores quo autem inventore deleniti sapiente ea atque molestias. Unde consectetur nam odio eum ex ad qui vitae quasi autem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur sit maiores quo autem inventore deleniti sapiente ea atque molestias. Unde consectetur nam odio eum ex ad qui vitae quasi autem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur sit maiores quo autem inventore deleniti sapiente ea atque molestias. Unde consectetur nam odio eum ex ad qui vitae quasi autem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur sit maiores quo autem inventore deleniti sapiente ea atque molestias. Unde consectetur nam odio eum ex ad qui vitae quasi autem</p>
+            </div>
         </section>
-        <section class="footer-website"></section>
+        <section class="footer-website">
+            <div class="information">
+                <span>TRAVEL LOGO</span>
+                <div class="adress">
+                    <img src="" alt="Address: ">
+                    <p>Ho Chi Minh city, Vietnam</p>
+                </div>
+                <div class="fax">
+                    <img src="" alt="Fax: ">
+                    <p>0386 940 444</p>
+                </div>
+                <div class="email">
+                    <img src="" alt="Email: ">
+                    <p>info@travelcompany.com</p>
+                </div>
+            </div>
+            <div class="policy">
+                <div class="policy-supported">
+                    <span>Policies</span><br>
+                    <a href="#">General policies and regulations</a><br>
+                    <a href="#">Policy for customers</a><br>
+                    <a href="#">Policy for partners</a><br>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Service purchase and return policy</a>
+                </div>
+            </div>
+            <div class="fullinformation">
+                <span>Travel</span>
+                <p>Company name: Travel Company Limited ; Business registration certificate number: xxxxxxxxxx Date of issue: DD/MM/YYYY Place of issue:
+                Department of Planning and Investment City. Ho Chi Minh</p>
+                <p>License to operate tours in and out of the country No: xx-xxx/xxxx/TCDL-GP LHQ</p>
+            </div>
+            <div class="event-certificate">
+                <span>Please refer your friends and relatives because you will be promoted through the referral code.</span>
+            </div>
+            <div class="copyright">
+                <span>This is a portfolio wrote by Phuc Bao</span>
+            </div>
+        </section>
     </div>
 </body>
 </html>

@@ -1,82 +1,108 @@
 .content-website .myservices{
-    height: var(--height-content-website-myservices);
-    background-color: var(--background-myservices);
-    color: var(--coloroftext);
+    height: var(--contentWebsite-height-myservices);
+    background-color: var(--r-bg-contentWebsite-myservices);
+    color: var(--r-cl-content);
 }
 
 .myareans{
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: var(--grid-gap-myareans);
-    margin: var(--margin-myareans);
-
+    grid-gap: var(--contentWebsite-myservices-gap-myareans);
+    margin: var(--contentWebsite-myservices-margin-myareans);
 }
 
 .myservices{
     text-align: center;
     justify-content: center;
-    font-size: var(--font-size-myservices);
-    height: calc(var(--height-content-website-myservices) - var(--line-height-myservices-span));
-    font-family: Mulish-VariableFont_wght;
+    font-size: var(--contentwebsite-fontS-myservices);
+    height: calc(
+        var(--contentWebsite-height-myservices) - 
+        var(--r-lineH-topicName));
+    font-family: ContentFont;
 }
 
 .myservices span{
-    padding-top: var(--padding-top-headername-span);
-    line-height: var(--line-height-headername-span);
+    padding-top: var(--r-paddT-topicName);
+    line-height: var(--r-lineH-topicName);
     text-align: center;
     justify-content: center;
-    font-size: var(--font-size-headername-span);
-    font-family: MerriweatherBold;
-    letter-spacing: var(--letter-spacing-headername-span);
+    font-size: var(--r-fontS-topicName);
+    font-family: TopicName;
+    letter-spacing: var(--r-letterS-topicName);
 }
 
 .myareans .item-grid{
-    margin: var(--margin-myareans-itemGrid);
+    margin: var(--contentWebsite-myservices-myareans-margin-itemGrid);
     display: flex;
     overflow-y: hidden;
     flex-direction: column;
 }
 
 .item-grid img{
-    border-radius: var(--border-radius-itemGrid-img);
-    margin: 0 auto;
-    height: var(--size-image);
-    width: var(--size-image);
+    border-radius: var(--contentWebsite-myservices-myareans-itemGrid-borderRadius-img);
+    margin: var(--contentWebsite-myservices-myareans-itemGrid-margin-img);
+    height: var(--contentWebsite-myservices-myareans-itemGrid-size-img);
+    width: var(--contentWebsite-myservices-myareans-itemGrid-size-img);
 }
 
-.item-grid h1, .item-grid p{
-    width: var(--size-image);
-    margin: 0 auto;
-    text-align: center
+.item-grid .product-name, .item-grid .product-detail{
+    width: var(--contentWebsite-myservices-myareans-itemGrid-size-img);
+    text-align: var(--contentWebsite-myservices-myareans-textAlign-itemGrid);
 }
-.item-grid p {
+
+.item-grid .product-name{
+    margin: var(--contentWebsite-myservices-myareans-itemGrid-margin-productName);
+}
+.item-grid .product-detail{
+    margin: var(--contentWebsite-myservices-myareans-itemGrid-margin-productDetail);
+}
+
+.item-grid .product-detail{
     position: relative;
     text-align: justify;
-    mask-image: linear-gradient(to bottom, var(--background-myservices-bottom), var(--background-myservices-top));
+    mask-image: linear-gradient(
+        to bottom, 
+        var(--contentWebsite-bgB-myservices), 
+        var(--contentWebsite-bgT-myservices));
     mask-repeat: no-repeat;
-    -o-mask-image: linear-gradient(to bottom, var(--background-myservices-bottom), var(--background-myservices-top));
+    -o-mask-image: linear-gradient(
+        to bottom, var(--contentWebsite-bgB-myservices),
+        var(--contentWebsite-bgT-myservices));
     -o-mask-repeat: no-repeat;
-    -webkit-mask-image: linear-gradient(to bottom, var(--background-myservices-bottom), var(--background-myservices-top));
+    -webkit-mask-image: linear-gradient(to bottom,
+        var(--contentWebsite-bgB-myservices),
+        var(--contentWebsite-bgT-myservices));
     -webkit-mask-repeat: no-repeat;
 }
 
-.item-grid a{
-    text-decoration: none;
-    margin: var(--margin-itemGrid-a);
-    margin-top: var(--margin-top-itemGrid-a);
-    padding: var(--padding-itemGrid-a);
-    color: var(--coloroftext);
-    border-radius: var(--border-radius-itemGrid-a);
-    width: var(--button-readmore);
-    border: var(--border-width-itemGrid-a) solid var(--coloroftext);
-    transition: var(--transition-itemGrid-a);
-    -o-transition: var(--transition-itemGrid-a);
-    -moz-transition: var(--transition-itemGrid-a);
-    -webkit-transition: var(--transition-itemGrid-a);
+.item-grid .readmore{
+    text-decoration: var(--contentWebsite-myservices-myareans-itemGrid-textDecoration-readmore);
+    margin: var(--contentWebsite-myservices-margin-readmore);
+    margin-top: var(--contentWebsite-myservices-marginT-readmore);
+    padding: var(--contentWebsite-myservices-pd-readmore);
+    color: var(--r-cl-content);
+    border-radius: var(--contentWebsite-myservices-bdR-readmore);
+    border: var(--contentWebsite-myservices-bdW-readmore) solid var(--r-cl-content);
+    width: var(--contentWebsite-myservices-width-readmore);
+    transition-property: var(--contentWebsite-myservices-transiProperty-readmore);
+    transition-duration: var(--contentWebsite-myservices-transiDuration-readmore);
+    transition-delay: var(--contentWebsite-myservices-transiDelay-readmore);
+    transition-timing-function: var(--contentWebsite-myservices-transiTFunc-readmore);
+    -o-transition-property: var(--contentWebsite-myservices-transiProperty-readmore);
+    -o-transition-duration: var(--contentWebsite-myservices-transiDuration-readmore);
+    -o-transition-delay: var(--contentWebsite-myservices-transiDelay-readmore);
+    -o-transition-timing-function: var(--contentWebsite-myservices-transiTFunc-readmore);
+    -moz-transition-property: var(--contentWebsite-myservices-transiProperty-readmore);
+    -moz-transition-duration: var(--contentWebsite-myservices-transiDuration-readmore);
+    -moz-transition-delay: var(--contentWebsite-myservices-transiDelay-readmore);
+    -moz-transition-timing-function: var(--contentWebsite-myservices-transiTFunc-readmore);
+    -webkit-transition-property: var(--contentWebsite-myservices-transiProperty-readmore);
+    -webkit-transition-duration: var(--contentWebsite-myservices-transiDuration-readmore);
+    -webkit-transition-delay: var(--contentWebsite-myservices-transiDelay-readmore);
+    -webkit-transition-timing-function: var(--contentWebsite-myservices-transiTFunc-readmore);
 }
 
-.item-grid a:hover {
-    letter-spacing: var(--letter-spacing-itemGrid-a_Hover);
-    color: var(--color-item-grid-a_Hover);
-    background-color: var(--background-color-item-grid-a_Hover);
-    /* font-size: var(--font-size-itemGrid-a_Hover); */
+.item-grid .readmore:hover {
+    letter-spacing: var(--contentWebsite-myservices-letterS-readmore_Hover);
+    color: var(--contentWebsite-myservices-cl-readmore_Hover);
+    background-color: var(--contentWebsite-myservices-bg-readmore_Hover);
 }
