@@ -1,11 +1,125 @@
-@keyframes changebackground {
-    0%{background-image: url('../../../asserts/image/201088.webp');background-position: 0px -90px;}
-    12.5%{background-position: 0px -40px;}
-    25%{background-image: url('../../../asserts/image/201089.webp')}
-    37.5%{background-position: 0px -10px}
-    50%{background-image: url('../../../asserts/image/201090.webp')}
-    62.5%{background-position: 0px -150px;}
-    75%{background-image: url('../../../asserts/image/201091.jpg');}
+.introduction .back1, .introduction .back2,
+.introduction .back3, .introduction .back4,.introduction .back5{
+    scale: 1;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+@keyframes load1 {
+    0%{
+        opacity: 1;
+        scale: 2;
+        transform: translateX(230px) translateY(-160px);
+    }
+    12%{
+        scale:1.2;
+    }
+    24%{
+        scale: 1;
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    99%{opacity: 0;transform: translateY(-50px)}
+    100%{
+        opacity: 0;scale: 2;transform:translateX(230px) translateY(-160px);
+    }
+}
+@keyframes load2 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    20%{opacity: 0;}
+    25% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+    49%{opacity: 1;}
+    50%{
+        opacity: 0;
+    }
+
+    100% {opacity: 0;
+        transform: translateY(10px);
+    }
+}
+@keyframes load3 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    45%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    74%{opacity: 1;}
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+@keyframes load4 {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    70%{opacity: 0;}
+
+    75%{
+        opacity: 1;transform: translateY(-50px);scale: 1;
+        scale:1;
+    }
+    90%{transform: translateY(-100px);}
+    100% {scale: 2;transform: translateY(-240px);opacity:1;
+    }
+}
+
+.introduction .back1 img,
+.introduction .back2 img,
+.introduction .back3 img,
+.introduction .back4 img,
+.introduction .back5 img {
+    opacity: 0;
+    width: 100%;
+}
+.introduction .back1 img{
+    animation: load1 20s infinite var(--time-begin);
+    filter: brightness(45%)
+}
+.introduction .back2 img{
+    animation: load2 20s infinite var(--time-begin);filter: brightness(45%)
+}
+.introduction .back3 img {
+    animation: load3 20s infinite var(--time-begin);filter: brightness(46%)
+}
+.introduction .back4 img {
+    animation: load4 20s infinite var(--time-begin);filter: brightness(40%)
+}
+
+.content-website .introduction{
+    position: relative;
 }
 
 .content-website .introduction{
@@ -13,8 +127,8 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
     background-repeat: no-repeat;
+    overflow: hidden;
     background-size:cover;
-    background-image: url('../../../asserts/image/201088.webp');
     background-position: 0px -90px;
     animation-name: changebackground;
     animation-duration: 20s;
@@ -26,8 +140,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    z-index: 1000;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--background-myservices);
     text-align: center;align-items: center;
     justify-content: center;
     color: var(--coloroftext);
